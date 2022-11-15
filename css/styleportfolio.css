@@ -39,7 +39,8 @@ img,video{
 html,body{
     margin: auto;
     padding: 0;   
-    max-width: 50rem; 
+    max-width: 50rem;
+    padding: 0 0.5rem;
 }
 
 body {

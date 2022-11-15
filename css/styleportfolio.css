@@ -102,3 +102,7 @@ body {
     width:100%;
     position:absolute;
 }
+.imagetaille{
+    width: 70%;
+    margin: auto;
+}

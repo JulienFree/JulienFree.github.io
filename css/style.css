@@ -2,6 +2,8 @@ body{
   animation: transitionIn 2s;
 }
 
+
+
 @keyframes transitionIn {
   from {
       opacity: 0;
@@ -11,6 +13,7 @@ body{
       opacity: 1;
   }
 }
+
 
 body {
   background: #fff;

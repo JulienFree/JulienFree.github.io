@@ -71,7 +71,7 @@
 			<div class="filters">
 				<ul>
 
-					<li id="all" data-filter="*">All</li>
+					<li data-filter="*" class="active">All</li>
 					<li data-filter=".classanimation2d">Animation 2D</li>
 					<li data-filter=".classjeuxvideo">jeux vidéo</li>
 					<li data-filter=".class3d">3D</li>
@@ -83,7 +83,7 @@
 				</ul>
 			</div>
 
-			<div class="filters-content">
+			<div class="filters-content" id="all" style="display: none;">
 				<div class="row grid">
 
 					<div class="single-portfolio col-sm-4 all classjeuxvideo class3d">
@@ -700,7 +700,7 @@
 	<script>
 
 		function refreshall() {
-			document.getElementById("all").className = "active";
+			document.getElementById("all").style= "";
 		}
 
 		//function hello() {

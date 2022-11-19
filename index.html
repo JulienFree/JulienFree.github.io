@@ -71,7 +71,7 @@
 			<div class="filters">
 				<ul>
 
-					<li data-filter="*">All</li>
+					<li id="all" data-filter="*">All</li>
 					<li data-filter=".classanimation2d">Animation 2D</li>
 					<li data-filter=".classjeuxvideo">jeux vidéo</li>
 					<li data-filter=".class3d">3D</li>
@@ -696,8 +696,18 @@
 		</div>
 	</footer>
 
+	<!--class="active"-->
+	<script>
 
+		function refreshall() {
+			document.getElementById("all").className = "active";
+		}
 
+		window.onload = function() {
+			refreshall();
+		};
+
+	</script>
 
 	<script src="js/vendor/jquery.min.js"></script>
 	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>

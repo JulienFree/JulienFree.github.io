@@ -133,16 +133,23 @@ header img{
       font-size: 20px;
       margin-top: 0.5rem;
     }
-
-    .navheader{
-        display: none;
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 90px;
     }
-    header nav{
-        display: none;
+    .lienheader{
+        
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+
+        margin: auto;
     }
     .logoheader{
         display: flex;
-        margin: auto;    
+        margin: 0.5rem;    
     }
     
 }

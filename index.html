@@ -209,7 +209,7 @@
 
     <footer>
         <div class="email" id="sectioncontact">
-            <img class="imgfooter" src="images/Fichier 1.svg" alt="">
+            <img class="logofooter" src="images/Fichier 1.svg" alt="">
         <p>Vous souhaitez me contacter ?</p>
         <p>email: julienronnyfriedrich@gmail.com</p>
         <a href="mailto:julienronnyfriedrich@gmail.com" class="boutonmail">envoyer un email</a>
@@ -217,20 +217,36 @@
         <div class="lienfooter">
             <a href="https://www.youtube.com/channel/UCcI3YhcpSHccY78hJoCGrHg" target="_blank">
                 <img class="imgfooter" src="images/icons8-youtube-96.png" alt="">
+                <p>neilujbox2000</p>
             </a>
             <a href="https://www.instagram.com/nbox2k.art/?hl=fr" target="_blank">
 
                 <img class="imgfooter" src="images/icons8-instagram-64.png" alt="">
+                <p>@nbox2000.art</p>
             </a>
 
             <a href="https://vimeo.com/user179080734?embedded=true&source=owner_portrait&owner=179080734" target="_blank">
                 <img class="imgfooter" src="images/icons8-vimeo-96.png" alt="">
+                <p>julien friedrich</p>
             </a>
             
         </div>
     
 
     </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
+
     <script src="script.js"></script>
 
   <script type="text/javascript">

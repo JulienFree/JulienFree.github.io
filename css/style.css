@@ -174,6 +174,33 @@ h2{
     font-weight: 400;
 }
 
+.filtre{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: black;
+    margin-bottom: 3rem;
+}
+
+.filtre li{
+    list-style: none;
+    background: rgba(75, 124, 155, 0.356);
+    border-radius: 2rem;
+    padding: 8px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: white;
+}
+
+.filtre li.active{
+    background-color:rgb(133, 178, 206);
+}
+
+.portfoliocol .parentcaseportfolio{
+    position: relative;
+}
+
 .portfoliocol{
     display: flex;
     flex-direction: row;

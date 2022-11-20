@@ -36,10 +36,21 @@
 
     <main>
         <h2 id="section-portfolio">Portfolio</h2>
+
+        
+        <ul class="filtre">
+            <li class="list active" data-filter="port-tout">tout</li>
+            <li class="list" data-filter="port-jeuxvideo">jeux vidéo</li>
+            <li class="list" data-filter="port-3d">3d</li>
+            <li class="list" data-filter="port-animation">animation</li>
+            <li class="list" data-filter="port-dessin">dessin</li>
+            <li class="list" data-filter="port-photo">photo</li>
+        </ul>
+        
         
         <div class="portfoliocol">
 
-            <a href="page_portfolio/foxrun.html" class="parentcaseportfolio">
+            <a href="page_portfolio/foxrun.html" class="parentcaseportfolio port-tout port-jeuxvideo port-3d">
                 <div>
                     <img src="images/minia_foxrun.png" alt="">
                 </div>
@@ -51,7 +62,7 @@
             </a>
 
             
-            <a href="page_portfolio/maxbiglair.html" class="parentcaseportfolio">
+            <a href="page_portfolio/maxbiglair.html" class="parentcaseportfolio port-tout port-jeuxvideo">
                 <div>
                     <img src="images/minia max biglair.png" alt="">
                 </div>
@@ -61,7 +72,7 @@
                 </div>
             </a>
 
-            <a href="page_portfolio/gorigori.html" class="parentcaseportfolio">
+            <a href="page_portfolio/gorigori.html" class="parentcaseportfolio port-tout port-jeuxvideo">
                 <div>
                     <img src="images/minia_gorigori.png" alt="">
                 </div>
@@ -71,7 +82,7 @@
                 </div>
             </a>
 
-            <a href="page_portfolio/heavenisland.html" class="parentcaseportfolio">
+            <a href="page_portfolio/heavenisland.html" class="parentcaseportfolio port-tout port-jeuxvideo port-3d">
                 <div>
                     <img src="images/minia heavenisland.png" alt="">
                 </div>
@@ -83,7 +94,7 @@
             </a>
 
             
-            <a href="page_portfolio/jolynedance.html" class="parentcaseportfolio">
+            <a href="page_portfolio/jolynedance.html" class="parentcaseportfolio port-tout port-animation port-dessin">
                 <div>
                     <img src="images/mina_jolyne.png" alt="">
                 </div>
@@ -94,7 +105,7 @@
                 </div>
             </a>
 
-            <a href="page_portfolio/dimensionparallele.html" class="parentcaseportfolio">
+            <a href="page_portfolio/dimensionparallele.html" class="parentcaseportfolio port-tout port-animation port-dessin">
                 <div>
                     <img src="images/minia astrau.png" alt="">
                 </div>
@@ -104,7 +115,7 @@
                     <p>dessin</p>
                 </div>
             </a>
-            <a href="page_portfolio/unevieplustard.html" class="parentcaseportfolio">
+            <a href="page_portfolio/unevieplustard.html" class="parentcaseportfolio port-tout port-animation port-dessin">
                 <div>
                     <img src="images/minia une vie après.png" alt="">
                 </div>
@@ -116,7 +127,7 @@
             </a>
 
             
-            <a href="page_portfolio/sclupting3d.html" class="parentcaseportfolio">
+            <a href="page_portfolio/sclupting3d.html" class="parentcaseportfolio port-tout port-3d">
                 <div>
                     <img src="images/minia sculpt.png" alt="">
                 </div>
@@ -126,7 +137,7 @@
                 </div>
             </a>
 
-            <a href="page_portfolio/canard3d.html" class="parentcaseportfolio">
+            <a href="page_portfolio/canard3d.html" class="parentcaseportfolio port-tout port-3d">
                 <div>
                     <img src="images/mina canard.png" alt="">
                 </div>
@@ -136,7 +147,7 @@
                 </div>
             </a>
 
-            <a href="page_portfolio/pumpkinkid.html" class="parentcaseportfolio">
+            <a href="page_portfolio/pumpkinkid.html" class="parentcaseportfolio port-tout port-3d">
                 <div>
                     <img src="images/minia citrouille.png" alt="">
                 </div>
@@ -147,7 +158,7 @@
             </a>
 
             
-            <a href="page_portfolio/dessincyberpunk.html" class="parentcaseportfolio">
+            <a href="page_portfolio/dessincyberpunk.html" class="parentcaseportfolio port-tout port-dessin">
                 <div>
                     <img src="images/minia cyberpunk draw.png" alt="">
                 </div>
@@ -157,7 +168,7 @@
                 </div>
             </a>
 
-            <a href="page_portfolio/dessinmanga.html" class="parentcaseportfolio">
+            <a href="page_portfolio/dessinmanga.html" class="parentcaseportfolio port-tout port-dessin">
                 <div>
                     <img src="images/minia dessin manga.png" alt="">
                 </div>
@@ -167,7 +178,7 @@
                 </div>
             </a>
 
-            <a href="page_portfolio/ustensilescuisine.html" class="parentcaseportfolio">
+            <a href="page_portfolio/ustensilescuisine.html" class="parentcaseportfolio port-tout port-photo">
                 <div>
                     <img src="images/minia couverts.png" alt="">
                 </div>
@@ -218,5 +229,27 @@
     
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.list').click(function(){
+            const value = $(this).attr('data-filter');
+            if (value == 'port-tout'){
+                $('.parentcaseportfolio').show('0');
+        }
+        else{
+            $('.parentcaseportfolio').not('.'+value).hide('0');
+            $('.parentcaseportfolio').filter('.'+value).show('0');
+        }
+        })
+        $('.list').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+    })
+
+  </script>
 </body>
 </html>

@@ -103,11 +103,9 @@ header img{
       font-size: 70px;
       margin-bottom: -1rem;
     }
-
     .titre2 {
         font-size: 70px;
-      }
-
+    }
     .titre3 {
         font-size: 30px;
     }
@@ -116,24 +114,40 @@ header img{
         justify-content: space-between;
         width: 50%;
         align-items: center;
-
         margin: auto;
-        
     }
-    
     .logoheader{
         margin-left: 15%;
+    }
+    .voir{
+        display: none;
+    }
+    .portfoliocol{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .parentcaseportfolio{
+        display: flex;
+        flex-direction: column;
+        width: max(20%,300px);
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        margin-bottom: 2rem;
     }
 }
 @media screen and (max-width: 600px) {
     .titre1 {
       font-size: 30px;
     }
-
     .titre2 {
         font-size: 30px;
-      }
-
+    }
     .titre3 {
       font-size: 20px;
       margin-top: 0.5rem;
@@ -144,19 +158,46 @@ header img{
         height: 90px;
     }
     .lienheader{
-        
         display: flex;
         justify-content: space-around;
         width: 100%;
         align-items: center;
-
         margin: auto;
     }
     .logoheader{
         display: flex;
         margin: 0.5rem;    
     }
-    
+    .parentcaseportfolio{
+        background-color: rgba(0, 0, 0, 0.103);
+    }
+    .voir{
+        background: white;
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+        color: rgb(125, 145, 255);
+        border-radius: 4rem;
+        font-weight: 400;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.664);
+    }
+    .portfoliocol{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .parentcaseportfolio{
+        display: flex;
+        flex-direction: column;
+        width: max(20%, 350px);
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        margin-bottom: 2rem;
+    }
 }
 
 body{
@@ -216,27 +257,6 @@ h2{
 
 .portfoliocol .parentcaseportfolio{
     position: relative;
-}
-
-.portfoliocol{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0 2rem;
-    align-items: center;
-    justify-content: center;
-   
-}
-
-.parentcaseportfolio{
-    display: flex;
-    flex-direction: column;
-    width: max(20%,300px);
-    padding: 1rem;
-    justify-content: center;
-    align-items: center;
-    color: rgb(255, 255, 255);
-    margin-bottom: 2rem;
 }
 
 .titreportfolio{

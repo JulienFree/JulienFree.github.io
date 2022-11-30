@@ -69,6 +69,26 @@ body {
     background-color: rgb(232, 228, 255);
 }
 
+.sketchfab-embed-wrapper{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-sizing: border-box;
+    display: block;
+}
+
+.sketchfabwindow{
+    height: 40rem;
+    width: 50rem;
+}
+
+@media screen and (max-width: 750px) {
+    .sketchfabwindow{
+        height: 30rem;
+        width: auto;
+    }
+}
+
 .maxjeu{
     /*text-align: center;
     margin: auto ;

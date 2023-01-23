@@ -1,0 +1,239 @@
+body{
+    animation: transitionIn 2s
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #100F0F;
+    color: white;
+    margin: auto;
+     
+    
+    
+}
+@media screen and (min-width: 601px) {
+    .vl {
+        border-left: 1px solid white;
+        height: 300px;
+    }
+    .herocontainer{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        gap: 4rem;
+        position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .hero{
+        background-color: black;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .herocontainer img{
+        height: 80%;
+        box-sizing: border-box;
+    }
+    .text{
+        max-width: 50rem;
+        margin: 2rem auto;
+        padding: 2rem 1rem;
+    }
+    .footer p{
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 8rem;
+        color: gray;
+    }
+    .montrepres img{
+        width: 10rem;
+    }
+    .montrepres{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        margin: 2rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .herocontainer{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        
+        position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .hero{
+        background-color: black;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .herocontainer img{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .text{
+        max-width: 50rem;
+        margin: 2rem 2rem;
+    }
+    .footer p{
+        margin: auto 2rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 8rem;
+        color: gray;
+        text-align: center;
+    }
+    .montrepres img{
+        width: 10rem;
+    }
+    .montrepres{
+        width: 10rem;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+}
+h1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: -1rem;
+    margin-top: 0;
+}
+p{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.pplus{
+    font-size: 1.7rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    
+}
+
+.footer{
+    height: 25rem;
+}
+
+
+.parallax{
+    background-image: url("images/montre\ paralax\ 3.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.274) inset;
+}
+
+.parallax1{
+    background-image: url("images/Smartphone-dark-mockup-03.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.274) inset;
+}
+
+.parallax2{
+    background-image: url("images/montre\ paralax.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.274) inset;
+}
+
+.footer h1{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 3rem;
+}
+
+.footer img{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 10px;
+    width: 15rem;
+}
+
+strong{
+    font-weight: 400;
+}
+
+.voiranim{
+    background-color: white;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 1.5rem auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.voiranim:hover{
+    background-color: rgb(204, 204, 204);
+}
+
+.voiranim p{
+    color: black;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0rem 1rem;    
+}

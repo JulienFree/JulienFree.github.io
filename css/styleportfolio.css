@@ -126,3 +126,25 @@ body {
     width: 70%;
     margin: auto;
 }
+.boutonmail:hover{
+    transition: 0.2s;
+    background-color: rgb(75, 125, 155);
+    transform: scale(1.05);
+}
+
+.boutonmail{
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin: 1rem auto 2rem;
+    color: rgb(255, 255, 255);
+    background-color: rgba(36, 113, 165, 0.514);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+a{
+    text-decoration: none;
+}

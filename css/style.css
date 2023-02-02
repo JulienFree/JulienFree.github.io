@@ -295,7 +295,7 @@ h2{
 }
 
 .aproposcol div{
-    width: max(47%, 400px);
+    /*width: max(47%, 400px);*/
     margin: 1rem;
 }
 
